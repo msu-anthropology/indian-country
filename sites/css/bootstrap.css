@@ -2779,7 +2779,7 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
-  background-color: #e6e6e6;
+  background-color: #666;
   border-color: #adadad;
 }
 .btn-default:active,
@@ -2807,7 +2807,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: #fff;
-  background-color: #333;
+  background-color: #666;
 }
 .btn-primary {
   color: #fff;
@@ -4095,8 +4095,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #b37300;
-  border-color: #cc8300;
+  background-color: #000;
+  border-color: #000;
 }
 .navbar-default .navbar-brand {
   color: #e69300;
@@ -4114,14 +4114,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #b37300;
+  color: #e69300;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #b37300;
+  background-color: #e69300;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -5355,18 +5355,18 @@ a.list-group-item-danger.active:focus {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  filter: alpha(opacity=20);
-  opacity: .2;
+  color: #fff;
+  text-shadow: 0 1px 0 #f8f8f8;
+  filter: alpha(opacity=50);
+  opacity: .5;
 }
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
-  filter: alpha(opacity=50);
-  opacity: .5;
+  filter: alpha(opacity=25);
+  opacity: .25;
 }
 button.close {
   -webkit-appearance: none;
@@ -5414,7 +5414,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #1a1a1a;
+  color: #f8f8f8;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #999;

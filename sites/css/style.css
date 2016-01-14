@@ -66,10 +66,10 @@ code {
 
 #map {
     position: absolute; 
-		top: 0;
-		left: 0; 
-		height: 100%; 
-		width: 100%;
+	top: 0;
+	left: 0; 
+	height: 100%; 
+	width: 100%;
 }
 
 .leaflet-control-zoom.leaflet-bar.leaflet-control{

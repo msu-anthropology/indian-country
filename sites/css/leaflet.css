@@ -185,7 +185,7 @@
 	outline: 0;
 	}
 .leaflet-container a {
-	color: #0078A8;
+	color: #b37300;
 	}
 .leaflet-container a.leaflet-active {
 	outline: 2px solid orange;
@@ -321,14 +321,14 @@
 /* attribution and scale controls */
 
 .leaflet-container .leaflet-control-attribution {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.7);
+	background: #000;
+	background: rgba(0, 0, 0, 0.7);
 	margin: 0;
 	}
 .leaflet-control-attribution,
 .leaflet-control-scale-line {
 	padding: 0 5px;
-	color: #333;
+	color: #fff;
 	}
 .leaflet-control-attribution a {
 	text-decoration: none;
