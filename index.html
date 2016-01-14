@@ -6,7 +6,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Digital Atlas of Egyptian Archaeology</title>
+    <title>This is Indian Country</title>
 
     
     <!-- Bootstrap core CSS -->
@@ -43,10 +43,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Welcome to the Digital Atlas of Egyptian Archaeology</h4>
+                        <h4 class="modal-title" id="myModalLabel" style="color: b37300">Welcome to This is Indian Country</h4>
                     </div>
                     <div class="modal-body">
-                        The Digital Atlas of Ancient Egypt is a digital cultural map of archaeological sites in Egypt (ranging from the Predynastic to the Roman period).  Collaboratively produced at Michigan State University during the Fall 2014 semester by the students registered in the Archaeology of Ancient Egypt class (ANP 455), the Digital Atlas of Ancient Egypt represents an experiment in applied digital archaeology undergraduate learning.  
+                        This is Indian Country is a digital cultural map of community issues worldwide. Collaboratively produced at Michigan State University during the Spring 2016 semester by the students registered in the Contemporary American Indian Communities class (ANP 433), This is Indian Country represents an experiment in applied digital anthropology undergraduate learning.  
 
                     </div>
                     <div class="modal-footer">
@@ -68,7 +68,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://matrix-msu.github.io/daea/index.html"><strong>This is Indian Country</strong></a>
+          <a class="navbar-brand" href="http://msu-anthropology.github.io/indian-country"><strong>This is Indian Country</strong></a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -76,9 +76,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="http://matrix-msu.github.io/daea/projects.html">About the Project</a></li>
-				<li><a href="http://matrix-msu.github.io/daea/class.html">About the Class</a></li>
-                <li><a href="http://matrix-msu.github.io/daea/students.html">Students</a></li>
+                <li><a href="projects.html">About the Project</a></li>
+				<li><a href="class.html">About the Class</a></li>
+                <li><a href="students.html">Students</a></li>
               </ul>
             </li>
           </ul>
@@ -87,7 +87,7 @@
     </div>
 
     <!-- MAP -->
-     <div id="map" style="background-color: #000"></div>
+     <div id="map"></div>
      
     <!-- FOOTER -->  
     <div class="footer">
@@ -170,7 +170,7 @@ $(window).on("resize", function () {
 <!-- Initiates Map and pulls data from .CSV --> 
 <script>
 
-            var map = L.map('map').setView([53.911994, 179.769764], 3);
+            var map = L.map('map').setView([53.911994,-179.769764], 3);
 
             L.tileLayer('https://{s}.tiles.mapbox.com/v3/leadr.omi874md/{z}/{x}/{y}.png', {
 			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -182,12 +182,6 @@ $(window).on("resize", function () {
              .on('ready', function(layer) {
        
         this.eachLayer(function(marker) {
-		
-			// Set Marker Color
-			if (marker.toGeoJSON().properties.siteName !== 'null') {
-				marker.setIcon(L.mapbox.marker.icon({
-					'marker-color': '#b37300',
-			}))};
           
             // Bind a popup to each icon based on the same properties
             // Adds coloumns of extra info to marker popup
