@@ -427,9 +427,9 @@
 	}
 .leaflet-container a.leaflet-popup-close-button {
 	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 4px 4px 0 0;
+	top: 8;
+	right: 18;
+	padding: 0px 0px 0 0;
 	text-align: center;
 	width: 18px;
 	height: 14px;
