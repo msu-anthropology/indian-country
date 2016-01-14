@@ -16,6 +16,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  width: 100%
 }
 .footer {
   position: fixed;
@@ -90,7 +91,7 @@ code {
 }
 
 #detail a {
-    color: #fff;
+    color: #b37300;
     text-decoration: none;
 }
 
