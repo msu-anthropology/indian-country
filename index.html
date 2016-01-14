@@ -184,7 +184,7 @@ $(window).on("resize", function () {
         this.eachLayer(function(marker) {
 		
 			// Set Marker Color
-			if (marker.toGeoJSON().properties.lang !== 'null') {
+			if (marker.toGeoJSON().properties.siteName !== 'null') {
 				marker.setIcon(L.mapbox.marker.icon({
 					'marker-color': '#b37300',
 			}))};
