@@ -897,7 +897,8 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.7;
+  letter-spacing: 2px;
   color: #333;
   background-color: #fff;
 }
@@ -3133,6 +3134,8 @@ tbody.collapse.in {
   display: none;
   float: left;
   min-width: 160px;
+  line-height: 1.42857143;
+  letter-spacing: normal;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 14px;
@@ -5453,6 +5456,7 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  color: #e69300;
 }
 .modal-body {
   position: relative;

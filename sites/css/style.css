@@ -46,6 +46,8 @@ body {
 .popover {
 	font-size: 12px;
 	color: #333;
+	line-height: 1.42857143;
+	letter-spacing: normal;
 }
 
 body > .container {
@@ -98,10 +100,18 @@ code {
 }
 
 #detail a {
+	color: #e69300;
+	text-decoration: none;
+}
+
+#detail figcaption {
+	padding-top: 4px;
+}
+
+#detail a:hover {
     color: #b37300;
     text-decoration: none;
 }
-
 
 a.back {
     background-color: #36A184;
