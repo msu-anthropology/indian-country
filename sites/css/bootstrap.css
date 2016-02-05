@@ -898,7 +898,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 1px;
+  letter-spacing: .1em;
+  font-weight: 200;
   color: #333;
   background-color: #fff;
 }
