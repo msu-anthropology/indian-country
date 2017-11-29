@@ -41,6 +41,7 @@ body {
 
 /* Custom page CSS
 -------------------------------------------------- */
+
 /* Not required for template or sticky footer method. */
 @media (max-width: 767px) {
 	#detail {
@@ -93,8 +94,8 @@ body > .container {
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 code {
@@ -130,6 +131,12 @@ code {
 /* DETAIL page CSS
 -------------------------------------------------- */
 
+#detail {
+    padding: 50px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
 #detail a {
 	color: #e69300;
 	text-decoration: none;
@@ -141,7 +148,7 @@ code {
 
 #detail a:hover {
     color: #b37300;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a.back {
