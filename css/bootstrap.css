@@ -5464,7 +5464,7 @@ button.close {
   padding: 15px;
   font-size: 12px;
   background-color: #ffffff;
-  color: #000000;
+  color: #333 !important;
   width: 95%;
   margin: auto;
 }
