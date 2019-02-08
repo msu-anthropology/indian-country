@@ -13,15 +13,31 @@
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li><a href=".">Issues Map</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="project.html">About the Project</a></li>
-				<li><a href="class.html">About the Class</a></li>
-                <li><a href="students.html">Students</a></li>
-              </ul>
-            </li>
+            <li><a id="menu-toggle" style="cursor: pointer">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
+
+	<!-- Drawer Script -->
+	<script type="text/javascript">
+		$('#about').BootSideMenu({
+			side:"right",
+			remember: false,
+			pushBody: false,
+			autoClose: true,
+			closeOnClick: false,
+			width: "33%"
+		});
+		
+		$('#menu-toggle').click(function () {
+			$('#about').BootSideMenu.toggle();
+		});
+	</script>
+
+	<!-- Drawer ABOUT -->
+	<div id="about">
+		<h3><em>This Is Indian Country</em></h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	  </div>
