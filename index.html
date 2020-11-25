@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head>
+<html lang="en">
+
+<script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+<head>
+  <title>This is Indian Country</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,16 +11,13 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>This is Indian Country</title>
-
-    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css" />
-	<link rel="stylesheet" href="css/BootSideMenu.css">    
+	  <link rel="stylesheet" href="css/BootSideMenu.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,7 +25,7 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
-    
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,9 +36,9 @@
   </head>
 
   <body>
-      
+
       <!-- MODAL -->
-      
+
       <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-dialog modal-vertical-centered">
@@ -47,7 +48,7 @@
                         <h4 class="modal-title" id="myModalLabel">Welcome to <em>This is Indian Country</em></h4>
                     </div>
                     <div class="modal-body">
-                        <em>This is Indian Country</em> is a digital cultural map of indigenous community issues worldwide. Collaboratively produced at Michigan State University during multiple semesters by the students registered in the Contemporary American Indian Communities class (ANP 433), <em>This is Indian Country</em> represents an experiment in applied digital anthropology undergraduate learning.  
+                        <em>This is Indian Country</em> is a digital cultural map of indigenous community issues worldwide. Collaboratively produced at Michigan State University during multiple semesters by the students registered in the Contemporary American Indian Communities class (ANP 433), <em>This is Indian Country</em> represents an experiment in applied digital anthropology undergraduate learning.
 
                     </div>
                     <div class="modal-footer">
@@ -58,14 +59,14 @@
             </div>
         </div>
       </div>
-    
+
       <!-- cenralized navbar -->
       <div id="central-nav"></div>
 
       <!-- MAP -->
       <div id="map"></div>
-     
-      <!-- centralized footer -->  
+
+      <!-- centralized footer -->
       <div id="central-foot"></div>
 
     <!-- Bootstrap core JavaScript
@@ -74,30 +75,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="leaflet-omnivore-master/leaflet-omnivore.js"></script>
-    <script src="js/leaflet.js"></script> 
-	<script src="js/BootSideMenu.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("a[rel=citation]").popover({
-				placement : 'top'
-			}).click(function (p) {
-				p.preventDefault();
-				var $self = $(this);
-				setTimeout(function () {
-					$self.popover('hide');
-				}, 4000);
-			});
-		});
-	</script>
+    <script src="js/leaflet.js"></script>
+	  <script src="js/BootSideMenu.js"></script>
+	  <script type="text/javascript">
+  		$(document).ready(function(){
+  			$("a[rel=citation]").popover({
+  				placement : 'top'
+  			}).click(function (p) {
+  				p.preventDefault();
+  				var $self = $(this);
+  				setTimeout(function () {
+  					$self.popover('hide');
+  				}, 4000);
+  			 });
+  		  });
+  	</script>
 
     <!-- Calls centralized navbar and footer -->
-    <script src="centralize-nav-foot/nav-foot.js"></script>	
-      
- <!-- Initiates Modal and Uses cookies for Dont Show Again Checkbox -->     
+    <script src="centralize-nav-foot/nav-foot.js"></script>
+
+ <!-- Initiates Modal and Uses cookies for Dont Show Again Checkbox -->
 <script type="text/javascript">
  $(document).ready(function () {
     $('#myModal').modal();
-  
+
    //check cookies
     function setCookie(){
         var dis = document.cookie;
@@ -107,23 +108,23 @@
         }
         console.log(dis.substring(8,13));
     }
-    setCookie();    
-     
-     
+    setCookie();
+
+
       var $check = $("input.dont").click(function(){
         if($("input.dont").is(":checked")){
-        document.cookie = "display=false";        
+        document.cookie = "display=false";
         }else{
-        document.cookie = "display=true";        
+        document.cookie = "display=true";
         }
-          
+
       });
  });
 </script>
- 
-      
-      
-<!-- Centers Modal Vertically -->      
+
+
+
+<!-- Centers Modal Vertically -->
 <script type="text/javascript">
       function centerModal() {
     $(this).css('display', 'block');
@@ -138,19 +139,21 @@ $(window).on("resize", function () {
     $('.modal:visible').each(centerModal);
 });
 </script>
-      
-      
-     
-<!-- Initiates Map and pulls data from .CSV --> 
+
+
+
+<!-- Initiates Map and pulls data from .CSV -->
 <script>
 
             var map = L.map('map', {
 				attributionControl: false
 			}).setView([46.2058487,-100.961857], 3);
 
-            L.tileLayer('https://{s}.tiles.mapbox.com/v3/leadr.omi874md/{z}/{x}/{y}.png', {
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 				maxZoom: 18,
-				minZoom: 2
+				minZoom: 2,
+        id:'0redfeather/ckhxs4rm914d919pj2zgf0fcp',
+        accessToken: 'pk.eyJ1IjoiMHJlZGZlYXRoZXIiLCJhIjoiY2puZzVlYTFmNDZ6bjN3cW8xMHAwNG53NSJ9.hQc74nd7nsRsbm_2ZWB8sw'
 			}).addTo(map);
 			L.control.attribution().setPrefix(
 				'<a alt="A JS library for interactive maps" href="http://leafletjs.com" target="_blank">Leaflet</a>'
@@ -160,9 +163,9 @@ $(window).on("resize", function () {
             //enter path for .csv here
             omnivore.csv('sites-popup.csv')
              .on('ready', function(layer) {
-       
+
         this.eachLayer(function(marker) {
-          
+
             // Bind a popup to each icon based on the same properties
             // Adds coloumns of extra info to marker popup
             marker.bindPopup(marker.toGeoJSON().properties.issue +
@@ -172,9 +175,8 @@ $(window).on("resize", function () {
         });
     })
             .addTo(map);
-            
+
 </script>
-      
 
 
 
