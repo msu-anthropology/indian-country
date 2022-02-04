@@ -12,3 +12,4 @@ The project has several goals.  First, it allows the students to have focused, a
 This project is a direct child of the [Digital Atlas of Egyptian Archaeology](https://github.com/matrix-msu/daea) (DAEA), a course project developed by [Ethan Watrall](https://github.com/watrall). Both **This is Indian Country** and **DAEA** were developed in partnership with [LEADR at MSU](http://leadr.msu.edu) and especially through the efforts of [Brian Geyer](https://github.com/geyerbri). Starting in January of 2020 and ending in May of 2022, [Zach Francis](https://github.com/0Redfeather) has been responsible for both teaching new anthropology students how to add new issues to the map, and maintaining the code repository for this project.
 
 (much of this README comes from the DAEA README)
+zcvasfgdasfdasfgadaf
